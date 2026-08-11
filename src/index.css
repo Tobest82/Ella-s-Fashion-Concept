@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Poppins', sans-serif;
+    --font-sans: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif !important;
+    color: #121212;
+    background-color: #FAF8F5;
+  }
+  
+  h1, h2, h3, h4, h5, h6, input, button, select, textarea {
+    font-family: 'Poppins', sans-serif !important;
+  }
+}
+
+/* Custom Utilities - Force Poppins everywhere */
+.font-serif,
+.font-sans {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+/* Luxury Gold & Accent Colors */
+.bg-gold {
+  background-color: #F4C430;
+}
+
+.text-gold {
+  color: #F4C430;
+}
+
+.border-gold {
+  border-color: #F4C430;
+}
+
+.hover\:bg-gold-dark:hover {
+  background-color: #d8a81d;
+}
+
+/* Glassmorphism & Soft Shadows */
+.glass-nav {
+  background: rgba(250, 248, 245, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-dark {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.shadow-luxury {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-luxury-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-luxury-hover:hover {
+  box-shadow: 0 20px 40px -15px rgba(244, 196, 48, 0.25);
+  transform: translateY(-4px);
+}
+
+/* Smooth Image Scale */
+.img-zoom {
+  overflow: hidden;
+}
+
+.img-zoom img {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.img-zoom:hover img {
+  transform: scale(1.08);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF8F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D4CEC5;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B5AFA5;
+}
+
+/* Ensure all buttons, links, and clickable elements show cursor: pointer on hover */
+button,
+a,
+select,
+summary,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+input[type="reset"],
+input[type="checkbox"],
+input[type="radio"],
+label[for] {
+  cursor: pointer !important;
+}
+
+/* Interactive link text hover style */
+a, .cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* Pulse Glow Animation */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+}
+
+.pulse-whatsapp {
+  animation: pulseGlow 2s infinite;
+}
+

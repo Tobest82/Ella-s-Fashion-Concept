@@ -1,0 +1,6 @@
+{
+  "name": "Ella's Fashion Concept",
+  "description": "Luxury female fashion eCommerce website featuring custom sewn apparel, interactive catalog, cart, checkout with WhatsApp ordering, customer reviews, and comprehensive admin dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
